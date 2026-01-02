@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <form class="form1">
+            <h1>Create Account</h1>
+            <input type="text" placeholder="E-mail">
+            <input type="password" placeholder="password">
+            <input type="password" placeholder="Confirm password">
+            <div class="btn">
+            <button type="button" onclick="nextToForm2()">Next</button>
+        </div>
+        </form>
+        <form class="form2">
+            <h1>Personal Details</h1>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Mobile number">
+            <div class="btn">
+            <button type="button" onclick="prevToForm1()">Prev</button>
+            <button type="button" onclick="nextToForm3()">Next</button>
+        </div>
+        </form>
+        <form class="form3">
+            <h1>Social Links</h1>
+            <input type="text" placeholder="GitHub">
+            <input type="text" placeholder="Linkedin">
+            <input type="text" placeholder="Twitter(X)">
+            <div class="btn">
+            <button type="button" onclick="prevToForm2()">Prev</button>
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+        <div class="progress">
+            <div class="progressBar"></div>
+            <div class="steps">Step 1</div>
+            <div class="steps">Step 2</div>
+            <div class="steps">Step 3</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

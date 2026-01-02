@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: url("blurred-background-close-up-colors-dark.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    color: white;
+    font-size: 20px;
+}
+.main{
+  width: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 0px 5px 1px white;
+  height: 400px;
+  overflow: hidden;
+}
+.main form{
+    width: 100%;
+    padding: 80px 30px;
+    position: absolute;
+    top: 0;
+    transition: 0.6s;
+}
+.main form h1{
+   color: rgb(237, 195, 69);
+}
+.main form input{
+    width: 100%;
+    padding: 10px 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    margin: 10px 0;
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn button{
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(45deg,red,yellow);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+.btn button:hover{
+    opacity: 1;
+    border-radius: 25px;
+}
+.form1{
+    left: 0;
+}
+.form2,
+.form3{
+   left: 100%;
+}
+.progress{
+    position: absolute;
+    width: 100%;
+    border-bottom: solid white;
+    display: flex;
+
+}
+.progress .steps{
+    width: 35%;
+    text-align: center;
+    padding: 10px 0;
+    color: burlywood;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 2;
+}
+.progressBar{
+    position: absolute;
+    width: 33%;
+    background: linear-gradient(to right, red,yellow);
+    height: 100%;
+    z-index: 1;
+    transition: 0.5s;
+}
+.progressBar::after{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: -21px;
+    border-top: 20px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-left: 22px solid yellow;
+}
